@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(clientes.css);
+@import url(contacto.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #000957;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.conteiner {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header ,.conteiner {
+    display: float;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+footer .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background-image: linear-gradient(to bottom, white, darkblue);
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width: auto;
+    }
+
+    footer .conteiner {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px) {
+    .conteiner {
+        width: 1000px;
+    }
+}
